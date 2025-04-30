@@ -1,0 +1,12 @@
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[build.processing.html]
+  pretty_urls = true
+
+[headers]
+  for = "/*"
+    [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate" 
